@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTB</title>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Fav Icon -->
+	<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Font Awesome Icons Link -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- mCustom ScrollBar Css -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+	<!-- FlipClock Plugin -->
+	<link rel="stylesheet" type="text/css" href="css/flipclock.css">
+	<!-- My Style -->
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<style type="text/css">
+		.no-website-promoted-wrapper {
+		    width: 100%;
+		    height: calc(100vh - 215px) !important;
+		    float: left;
+		}
+		.no-website-promoted-container {
+		    width: 100%;
+		    display: inline-block;
+		}
+		.no-website-promoted-img {
+		    width: 500px;
+		    margin: 0 auto;
+		    display: block;
+		    object-fit: cover;
+		}
+		.no-website-promoted-text {
+		    margin: 0;
+		    text-align: center;
+		    font-size: 22px;
+		    font-weight: 600;
+		    color: #5553ce;
+		}
+	</style>
+</head>
+<body>
+	<header class="dashboard-header-wrapper">
+		<nav class="navbar navbar-expand-lg fixed-top sticky background-color-black navbar-custom">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo-black-bg.png" class="img-responsive index-page-navbar-logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dashboardNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="dashboardNavbar" class="collapse navbar-collapse justify-content-end">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="aboutUs.html">About Us</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="Blog.html">Blog</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="News.html">News</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="howToEarn.html">How To Earn</a>
+				    </li>
+					<!-- Dropdown -->
+					<li class="nav-item dropdown">
+						<button class="btn nav-link dropdown-toggle dashboard-nav-usr-btn" href="#" id="navbardrop" data-toggle="dropdown">
+							<img src="images/userim.jpg" class="dashboard-nav-img">
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="dashboard.html">My Dashboard</a>
+							<a class="dropdown-item" href="myCredits.html">My Credits</a>
+							<a class="dropdown-item" href="myPayments.html">My Payments</a>
+							<a class="dropdown-item" href="index.html">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="advertisement-page-content-wrapper">		
+		<section class="advertisement-page-puzzle-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="puzzle-game-wrapper">
+							<div class="banner-advt-container">
+								<img src="images/banner-1.png" class="advertisement-page-img">
+							</div>
+							<div class="puzzle-game-board-wrapper">
+						   		<div class="puzzle-game-board-container">
+									<div class="clock"></div>
+						   			<div class="puzzle-game-icon-container">
+						   				<button class="btn puzzle-game-icn"><i class="fas fa-bell"></i></button>
+						   				<button class="btn puzzle-game-icn"><i class="fas fa-volleyball-ball"></i></button>
+						   				<button class="btn puzzle-game-icn"><i class="fas fa-baseball-ball"></i></button>
+						   				<button class="btn puzzle-game-icn"><i class="fas fa-bell"></i></button>
+						   				<button class="btn puzzle-game-icn"><i class="fas fa-football-ball"></i></button>
+						   			</div>
+						   			<div class="puzzle-game-options-container">
+						   				<span class="puzzle-game-option"><i class="far fa-star"></i> 20</span>
+						   				<span class="puzzle-game-option" data-toggle="modal" data-target="#reviewModal"><i class="far fa-comment-dots"></i> 15</span>
+						   				<a class="puzzle-game-option" href="buyTraffiCredits.html">Buy TraffiCredits</a>
+						   			</div>
+						   			<div class="puzzle-game-expln-container">
+						   				<p class="puzzle-game-expln">Picture will appear as the Timer Expires</p>
+						   			</div>
+						   		</div>
+							</div>
+							<div class="puzzle-game-scoreboard-wrapper">
+						   		<div class="puzzle-game-scoreboard-container">
+						   			<div class="scoreboard-surf-box">
+							   			<span class="scoreboard-surf-box-count">15</span>
+							   			<span class="scoreboard-surf-box-title">Surfed Today</span>	   				
+						   			</div>
+						   			<div class="scoreboard-credit-box">
+						   				<span class="scoreboard-credit-box-count">60</span>
+						   				<span class="scoreboard-credit-box-title">TraffiCredits</span>
+						   			</div>
+						   		</div>								
+							</div>
+					   		<div class="advertisement-page-promote-btn-container">
+								<a href="promoteYourWebsite.html" class="btn advertisement-page-promote-btn">Promote your own Website</a>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <iframe id="website-frame" title="surfing" width="100%" height="430" frameborder="0" src="http://18.188.229.2/oolaga/"></iframe> -->
+		<section class="no-website-promoted-wrapper">
+			<div class="no-website-promoted-container">
+				<img src="images/43126.jpg" class="img-fluid no-website-promoted-img">
+				<p class="no-website-promoted-text">There are currently no websites being promoted. Please check again later.</p>
+			</div>
+		</section>	
+	</main>
+	<!-- Reviews Modal -->
+	<div class="modal fade" id="reviewModal">
+		<div class="modal-dialog modal-md modal-dialog-centered">
+			<div class="modal-content">	  
+				<!-- Modal Header -->
+				<div class="modal-header reviewMdl-head">
+					<h4 class="modal-title">Reviews</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>	    
+				<!-- Modal body -->
+				<div class="modal-body reviewMdl-body">
+					<ul class="review-modal-list">
+						<li class="review-modal-list-item">
+							<div class="review-item-container">
+								<div class="review-item-img-container">
+									<img src="images/userim.jpg" class="review-item-img">
+								</div>
+								<div class="review-item-data-container">
+									<p class="review-item-user-name">John Doe</p>
+									<p class="review-item-user-msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+								</div>
+							</div>
+						</li>
+						<li class="review-modal-list-item">
+							<div class="review-item-container">
+								<div class="review-item-img-container">
+									<img src="images/userim.jpg" class="review-item-img">
+								</div>
+								<div class="review-item-data-container">
+									<p class="review-item-user-name">John Doe</p>
+									<p class="review-item-user-msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>	    
+				<!-- Modal footer -->
+				<div class="modal-footer reviewMdl-foot">
+					<a href="javascript:void(0)" class="btn review-modal-btn" data-dismiss="modal" data-toggle="modal" data-target="#reviewSubmitModal">Write a Review</a>
+				</div>
+			</div>	    
+		</div>
+	</div>
+	<!-- Submit Review Modal -->
+	<div class="modal fade" id="reviewSubmitModal">
+		<div class="modal-dialog modal-md modal-dialog-centered">
+			<div class="modal-content">	  
+				<!-- Modal Header -->
+				<div class="modal-header reviewSubmitMdl-head">
+					<h4 class="modal-title">Write a Review</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>	    
+				<!-- Modal body -->
+				<div class="modal-body reviewSubmitMdl-body">
+					<form>
+						<div class="form-group">
+							<textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+					</form>
+				</div>	    
+				<!-- Modal footer -->
+				<div class="modal-footer reviewSubmitMdl-foot">
+					<a href="javascript:void(0)" class="btn review-submit-back-btn" data-dismiss="modal" data-toggle="modal" data-target="#reviewModal">Back to Reviews</a>
+					<a href="javascript:void(0)" class="btn review-submit-modal-btn">Submit Review</a>
+				</div>
+			</div>	    
+		</div>
+	</div>
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- mCustom ScrollBar Plugin -->
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- FlipClock Plugin -->
+	<script type="text/javascript" src="js/flipclock.js"></script>
+	<!-- Plugin Initialization -->
+	<script type="text/javascript" src="js/Plugin init/flipclock-init.js"></script>
+	<script type="text/javascript" src="js/Plugin init/mCustomScrollBar-init.js"></script>
+	<!-- My Script -->
+	<script type="text/javascript" src="js/myscript.js"></script>
+</body>
+</html>

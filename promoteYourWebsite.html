@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTB</title>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Fav Icon -->
+	<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Font Awesome Icons Link -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- Select 2 Plugin -->
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+	<!-- My Style -->
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<style type="text/css">
+		.add-website-link {
+			width: 70%;
+			float: left;
+		}
+		.unique-website-switch {
+			width: 55px;
+			float: left;
+			padding: 7px 62px;
+		}
+		.promote-website-link-container {
+			position: relative;
+		}
+		.cstm-tooltip-text {
+			padding: 10px;
+			background-color: #333;
+			border-radius: 4px;
+			color: #fff;
+			display: inline;
+			position: absolute;
+			top: 8px;
+			font-size: 13px;
+			font-weight: 600;
+			margin: 0;
+			left: 77%;
+		}
+		.cstm-tooltip-text::after {
+			content: "";
+			position: absolute;
+			top: 38%;
+			left: 36%;
+			margin-left: -65px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: transparent #333 transparent transparent;
+		}
+	</style>
+</head>
+<body>
+	<header class="dashboard-header-wrapper">
+		<nav class="navbar navbar-expand-lg fixed-top sticky background-color-black navbar-custom">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo-black-bg.png" class="img-responsive index-page-navbar-logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dashboardNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="dashboardNavbar" class="collapse navbar-collapse justify-content-end">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="aboutUs.html">About Us</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="Blog.html">Blog</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="News.html">News</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="howToEarn.html">How To Earn</a>
+				    </li>
+					<!-- Dropdown -->
+					<li class="nav-item dropdown">
+						<button class="btn nav-link dropdown-toggle dashboard-nav-usr-btn" href="#" id="navbardrop" data-toggle="dropdown">
+							<img src="images/userim.jpg" class="dashboard-nav-img">
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="dashboard.html">My Dashboard</a>
+							<a class="dropdown-item" href="myCredits.html">My Credits</a>
+							<a class="dropdown-item" href="myPayments.html">My Payments</a>
+							<a class="dropdown-item" href="index.html">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>	
+	<div class="advertisement-top-bar-ad-wrapper">
+		<a href="advertisement.html" class="dashboard-top-bar-ad-link">
+			<img src="images/new-banner.png" class="dashboard-new-banner-img">
+		</a>
+	</div>
+	<section class="promote-website-page-content-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h1 class="promote-website-page-header">Promote your own Website</h1>
+				</div>
+			</div>
+			<div class="row mg-tb-35">
+				<div class="col-lg-12">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#adSingleWebsite">Add Single Website</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#adMultipleWebsite">Add Multiple Website</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#promotedWebsite">Promoted Websites</a>
+						</li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<!-- 1st Tab -->
+						<div class="tab-pane container active" id="adSingleWebsite">
+							<div class="tab-data-container">
+								<h3 class="promote-website-tab-heading">Earn of Purchase TraffiCredit</h3>
+								<a href="buyPlan.html" class="btn promote-website-upgrade-plan-btn">Upgrade Plan</a>
+								<div class="promote-website-tab-plan-data-container">
+									<p class="promote-website-plan-info">
+										<span>Purchased Plan :</span> <span>Comfort</span>
+									</p>
+									<div class="promote-website-plan-option-container">
+										<span>Targeted Option :</span> 
+										<ul class="promote-website-plan-option-list">
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Continent</span>
+											</li>
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Country</span>
+											</li>
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">City</span>
+											</li>
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Gender</span>
+											</li>
+											<!-- <li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Hobbies</span>
+											</li>
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Interests</span>
+											</li>
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Education</span>
+											</li> -->
+										</ul>
+										<span class="btn plan-option-change-btn" data-toggle="modal" data-target="#planChangeModal">Change</span>
+									</div>
+								</div>								
+								<div class="promote-website-campaign-option-container">
+								 	<form>
+								  		<select class="custom-select promote-website-campaign-options">
+									    	<option selected>Choose minimum surf duration</option>
+									    	<option value="20s">Short (20+ seconds)</option>
+									    	<option value="40s">Medium (40+ seconds)</option>
+									    	<option value="60s">Long (60+ seconds)</option>
+									  	</select>
+									</form> 
+								</div>
+								<div class="promote-website-price-info-container"></div>
+								<div class="promote-website-tab-link-container">
+									<ul class="promote-website-tab-link-info-list">
+										<li class="promote-website-tab-link-info-list-item">
+											<p class="promote-website-tab-link-info">Link :</p>
+										</li>
+										<li class="promote-website-tab-link-info-list-item">
+											<p class="promote-website-tab-link-info">Add your links with optional titles.</p>
+										</li>
+										<li class="promote-website-tab-link-info-list-item">
+											<p class="promote-website-tab-link-info"><strong>Example :</strong>  http://www.dummy1.com Name 1</p>
+										</li>
+										<li class="promote-website-tab-link-info-list-item">
+											<p class="promote-website-tab-link-info">http://www.dummy2.com Name 2</p>
+										</li>
+									</ul>
+								</div>
+								<div class="promote-website-link-container">
+									<p class="cstm-tooltip-text">Unique website per visit</p>
+									<input type="text" class="form-control add-website-link" placeholder="Add Website">
+									<div class="unique-website-switch-container">
+										<div class="custom-control custom-switch unique-website-switch">
+								      		<input type="checkbox" class="custom-control-input" id="switch1" name="example">
+								      		<label class="custom-control-label" for="switch1"></label>
+									    </div>
+									</div>
+								</div>
+								<div class="promote-website-language-option-container">
+								 	<form>
+							 			<label class="promote-website-language-label">Default Language of Websites :</label>
+										<select class="custom-select promote-website-language-select-box">
+											<option selected>English</option>
+											<option>French</option>
+										</select>
+									</form> 
+								</div>
+								<div class="promote-website-week-days-container">
+									<p class="promote-website-week-days-info">Select days of the week when your web site should be shown:</p>
+									<form action="/action_page.php">
+										<div class="form-check-inline">
+											<label class="form-check-label" for="check1">
+												<input type="checkbox" class="form-check-input">Sunday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label" for="check2">
+												<input type="checkbox" class="form-check-input">Monday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input">Tuesday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input">Wednesday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input">Thursday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input">Friday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input">Saturday
+											</label>
+										</div>
+										<div class="promote-website-form-submit-btn-container text-center">
+											<button type="submit" class="btn promote-website-form-submit-btn">Submit</button>
+										</div>
+									</form>
+								</div>
+								<div class="promote-website-another-website-btn-container text-center">
+									<button class="btn add-another-website-btn"><i class="fas fa-plus"></i> Add Another Website</button>
+								</div>
+							</div>
+						</div>
+						<!-- 2nd Tab -->
+						<div class="tab-pane container fade" id="adMultipleWebsite">
+							<div class="tab-data-container">
+								<h3 class="promote-website-tab-heading">Earn of Purchase TraffiCredit</h3>
+								<a href="buyPlan.html" class="btn promote-website-upgrade-plan-btn">Upgrade Plan</a>
+								<div class="promote-website-tab-plan-data-container">
+									<p class="promote-website-plan-info">
+										<span>Purchased Plan :</span> <span>Comfort</span>
+									</p>
+									<div class="promote-website-plan-option-container">
+										<span>Targeted Option :</span> 
+										<ul class="promote-website-plan-option-list">
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Continent</span>
+											</li>
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Country</span>
+											</li>
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">City</span>
+											</li>
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Gender</span>
+											</li>
+											<!-- <li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Hobbies</span>
+											</li>
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Interests</span>
+											</li>
+											<li class="promote-website-plan-option-list-item">
+												<span class="badge plan-option-badge">Education</span>
+											</li> -->
+										</ul>
+										<span class="btn plan-option-change-btn" data-toggle="modal" data-target="#planChangeModal">Change</span>
+									</div>
+								</div>
+								<div class="promote-website-campaign-option-container">
+								 	<form>
+								  		<select class="custom-select promote-website-campaign-options">
+									    	<option selected>Choose minimum surf duration</option>
+									    	<option value="20s">Short (20+ seconds)</option>
+									    	<option value="40s">Medium (40+ seconds)</option>
+									    	<option value="60s">Long (60+ seconds)</option>
+									  	</select>
+									</form> 
+								</div>
+								<div class="promote-website-price-info-container">
+								</div>
+								<div class="promote-website-tab-link-container">
+									<ul class="promote-website-tab-link-info-list">
+										<li class="promote-website-tab-link-info-list-item">
+											<p class="promote-website-tab-link-info">Link :</p>
+										</li>
+										<li class="promote-website-tab-link-info-list-item">
+											<p class="promote-website-tab-link-info">Add your links with optional titles, one per row.</p>
+										</li>
+										<li class="promote-website-tab-link-info-list-item">
+											<p class="promote-website-tab-link-info"><strong>Example :</strong>  http://www.dummy1.com Name 1</p>
+										</li>
+										<li class="promote-website-tab-link-info-list-item">
+											<p class="promote-website-tab-link-info">http://www.dummy2.com Name 2</p>
+										</li>
+									</ul>
+								</div>
+								<div class="promote-website-link-container">
+									<input type="text" class="form-control" placeholder="Add Website">
+								</div>								
+								<div class="promote-website-add-more-link-btn-container">
+									<button class="btn add-more-link-btn"><i class="fas fa-plus"></i> Add More</button>
+								</div>
+								<div class="promote-website-language-option-container">
+								 	<form>
+							 			<label class="promote-website-language-label">Default Language of Websites :</label>
+										<select class="custom-select promote-website-language-select-box">
+											<option selected>English</option>
+											<option>French</option>
+										</select>
+									</form> 
+								</div>
+								<div class="promote-website-week-days-container">
+									<p class="promote-website-week-days-info">Select days of the week when your web site should be shown:</p>
+									<form action="/action_page.php">
+										<div class="form-check-inline">
+											<label class="form-check-label" for="check1">
+												<input type="checkbox" class="form-check-input">Sunday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label" for="check2">
+												<input type="checkbox" class="form-check-input">Monday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input">Tuesday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input">Wednesday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input">Thursday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input">Friday
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" class="form-check-input">Saturday
+											</label>
+										</div>
+										<div class="promote-website-form-submit-btn-container text-center">
+											<button type="submit" class="btn promote-website-form-submit-btn">Submit</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- 3rd Tab -->
+						<div class="tab-pane container fade" id="promotedWebsite">
+							<div class="tab-data-container">
+								<div class="table-responsive-md">
+									<table class="table table-striped table-hover">
+										<thead class="thead-dark">
+											<tr>
+												<th>Website</th>
+												<th>TraffiCredits Invested</th>
+												<th>Status</th>
+												<th>Actions</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><a class="promote-website-view-link" href="javascript:void(0)">View Details</a></td>
+												<td>25</td>
+												<td>
+													<form>
+														<div class="custom-control custom-switch">
+															<input type="checkbox" class="custom-control-input" id="switch1">
+															<label class="custom-control-label" for="switch1"></label>
+														</div>
+													</form> 
+												</td>
+												<td>
+													<span class="promote-website-action-icon"><i class="fas fa-edit"></i></span>
+													<span class="promote-website-action-icon"><i class="fas fa-copy"></i></span>
+													<span class="promote-website-action-icon"><i class="fas fa-trash-alt"></i></span>
+												</td>
+											</tr>
+											<tr>
+												<td><a class="promote-website-view-link" href="javascript:void(0)">View Details</a></td>
+												<td>45</td>
+												<td>
+													<form>
+														<div class="custom-control custom-switch">
+															<input type="checkbox" class="custom-control-input" id="switch2">
+															<label class="custom-control-label" for="switch2"></label>
+														</div>
+													</form>
+												</td>
+												<td>
+													<span class="promote-website-action-icon"><i class="fas fa-edit"></i></span>
+													<span class="promote-website-action-icon"><i class="fas fa-copy"></i></span>
+													<span class="promote-website-action-icon"><i class="fas fa-trash-alt"></i></span>
+												</td>
+											</tr>
+											<tr>
+												<td><a class="promote-website-view-link" href="javascript:void(0)">View Details</a></td>
+												<td>35</td>
+												<td>
+													<form>
+														<div class="custom-control custom-switch">
+															<input type="checkbox" class="custom-control-input" id="switch3">
+															<label class="custom-control-label" for="switch3"></label>
+														</div>
+													</form>
+												</td>
+												<td>
+													<span class="promote-website-action-icon"><i class="fas fa-edit"></i></span>
+													<span class="promote-website-action-icon"><i class="fas fa-copy"></i></span>
+													<span class="promote-website-action-icon"><i class="fas fa-trash-alt"></i></span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="index-page-footer-wrapper">
+		<ul class="breadcrumb index-page-upper-footer-list">
+			<li class="breadcrumb-item"><a href="contactUs.html">Contact Us</a></li>
+		    <li class="breadcrumb-item"><a href="faq.html">FAQ</a></li>
+		    <li class="breadcrumb-item"><a href="privacyPolicy.html">Privacy Policy</a></li>
+		    <li class="breadcrumb-item"><a href="termsAndConditions.html">Terms & Conditions</a></li>
+		</ul>
+	</footer>	
+	<!-- Plan Option Chage Modal -->
+	<div class="modal fade" id="planChangeModal">
+		<div class="modal-dialog modal-md modal-dialog-centered">
+			<div class="modal-content">	  
+				<!-- Modal Header -->
+				<div class="modal-header planOptMdl-head">
+					<h4 class="modal-title">Targeting Options</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>	    
+				<!-- Modal body -->
+				<div class="modal-body planOptMdl-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 mg-tb-1">
+								<select id="promo-site-user-op1" class="custom-select" multiple="multiple">
+									<option value="1">Asia</option>
+									<option value="2">Russia</option>
+									<option value="3">Americas</option>
+									<option value="4">South America</option>
+									<option value="5">Europe</option>
+									<option value="6">Australia</option>
+									<option value="7">Africa</option>
+								</select>
+							</div>
+							<div class="col-sm-12 mg-tb-1">
+								<select id="promo-site-user-op2" class="custom-select" multiple="multiple">
+									<option>India</option>
+									<option>Japan</option>
+									<option>Russia</option>
+									<option>Sri Lanka</option>
+								</select>
+							</div>
+							<div class="col-sm-12 mg-tb-1">
+								<select id="promo-site-user-op3" class="custom-select" multiple="multiple">
+									<option>Delhi</option>
+									<option>Chennai</option>
+									<option>Ludhiana</option>
+								</select>
+							</div>
+							<div class="col-sm-12 mg-tb-1">
+								<select id="promo-site-user-op5" class="custom-select" multiple="multiple" disabled="disabled">
+									<optgroup label="Group 1">
+									<option>Online Gaming</option>
+									<option>Indoor Games</option>
+									<option>Outdoor Games</option>
+									<option>Reading Books/Articles</option>
+									<optgroup label="Group 2">
+									<option>Online Gaming</option>
+									<option>Indoor Games</option>
+									<option>Outdoor Games</option>
+									<option>Reading Books/Articles</option>
+									<option>Other</option>
+								</select>
+							</div>
+							<div class="col-sm-12 mg-tb-1">
+								<select id="promo-site-user-op6" class="custom-select" multiple="multiple" disabled="disabled">
+									<optgroup label="Group 1" >
+									<option>Increase Traffic</option>
+									<option>Business Engagement</option>
+									<option>Brand Awareness</option>
+									<option>Lead Generation</option>
+									<optgroup label="Group 2">
+									<option>Increase Traffic</option>
+									<option>Business Engagement</option>
+									<option>Brand Awareness</option>
+									<option>Lead Generation</option>
+									<option>Other</option>
+								</select>
+							</div>
+							<div class="col-sm-12 mg-tb-1">
+								<select id="promo-site-user-op4" class="custom-select" multiple="multiple">
+									<option>Male</option>
+									<option>Female</option>
+								</select>
+							</div>
+							<div class="col-sm-12 mg-tb-1">
+								<div class="settings-cstm-inpt-container">
+									<input class="setting-cstm-inpt" type="text" placeholder="Age Group From" disabled="disabled">
+									<input class="setting-cstm-inpt" type="text" placeholder="To" disabled="disabled">		
+								</div>
+							</div>
+							<div class="col-sm-12 mg-tb-1">
+								<select id="promo-site-user-op7" class="custom-select" multiple="multiple" disabled="disabled">
+									<option>B.Tech</option>
+									<option>B.C.A.</option>							
+								</select>
+							</div>
+							<div class="col-sm-12 mg-tb-1">
+								<input type="text" class="settings-cstm-inpt-name" placeholder="Save Preset As">
+							</div>
+						</div>
+					</div>
+				</div>	    
+				<!-- Modal footer -->
+				<div class="modal-footer planOptMdl-foot">
+					<a href="javascript:void(0)" class="btn review-submit-modal-btn" data-toggle="modal" data-dismiss="modal" data-target="#prevSavedConfgModal">Load Configuration</a>
+					<a href="javascript:void(0)" class="btn review-submit-modal-btn">Save & Apply</a>
+				</div>
+			</div>	    
+		</div>
+	</div>
+	<!-- Previously Saved Configuration Modal -->
+	<div class="modal fade" id="prevSavedConfgModal">
+		<div class="modal-dialog modal-xl modal-dialog-centered">
+			<div class="modal-content">	  
+				<!-- Modal Header -->
+				<div class="modal-header savdConfMdl-head">
+					<h4 class="modal-title">Previously Saved Targeting Options</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>	    
+				<!-- Modal body -->
+				<div class="modal-body savdConfMdl-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="table-responsive-md">
+									<table class="table table-striped table-hover">
+										<thead class="thead-dark">
+											<tr>
+												<th>Name</th>
+												<th>Continent</th>
+												<th>Country</th>
+												<th>City</th>
+												<th>Gender</th>
+												<th>Age</th>
+												<th>Hobbies</th>
+												<th>Interests</th>
+												<th>Education</th>
+												<th>Actions</th>
+												<th>Choose Plan</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>John Doe</td>
+												<td>Asia, Europe, Australia</td>
+												<td>India, Japan, France</td>
+												<td>Delhi, Bangalore</td>
+												<td>Male</td>
+												<td>18-30</td>
+												<td>Indoor Games</td>
+												<td>Increase Traffic</td>
+												<td>B.C.A.</td>
+												<td>
+													<div class="prev-saved-config-btn-container">
+														<span class="btn prev-saved-confg-btn"><i class="fas fa-eye"></i></span>
+														<span class="btn prev-saved-confg-btn"><i class="fas fa-edit"></i></span>
+														<span class="btn prev-saved-confg-btn"><i class="fas fa-trash-alt"></i></span>			
+													</div>
+												</td>
+												<td>
+													<button class="btn prev-confg-choose-btn"><i class="fas fa-check"></i> Select</button>
+												</td>
+											</tr>
+											<tr>
+												<td>John</td>
+												<td>Australia</td>
+												<td>France</td>
+												<td>Bangalore</td>
+												<td>Male</td>
+												<td>18-30</td>
+												<td>Indoor Games</td>
+												<td>Increase Traffic</td>
+												<td>B.C.A.</td>
+												<td>
+													<div class="prev-saved-config-btn-container">
+														<span class="btn prev-saved-confg-btn"><i class="fas fa-eye"></i></span>
+														<span class="btn prev-saved-confg-btn"><i class="fas fa-edit"></i></span>
+														<span class="btn prev-saved-confg-btn"><i class="fas fa-trash-alt"></i></span>	
+													</div>
+												</td>
+												<td>
+													<button class="btn prev-confg-choose-btn"><i class="fas fa-check"></i> Select</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Johnson</td>
+												<td>Asia</td>
+												<td>India</td>
+												<td>Delhi</td>
+												<td>Male</td>
+												<td>18-30</td>
+												<td>Indoor Games</td>
+												<td>Increase Traffic</td>
+												<td>B.C.A.</td>
+												<td>
+													<div class="prev-saved-config-btn-container">
+														<span class="btn prev-saved-confg-btn"><i class="fas fa-eye"></i></span>
+														<span class="btn prev-saved-confg-btn"><i class="fas fa-edit"></i></span>
+														<span class="btn prev-saved-confg-btn"><i class="fas fa-trash-alt"></i></span>	
+													</div>
+												</td>
+												<td>
+													<button class="btn prev-confg-choose-btn"><i class="fas fa-check"></i> Select</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	    
+				<!-- Modal footer -->
+				<div class="modal-footer savdConfMdl-foot">
+				</div>
+			</div>	    
+		</div>
+	</div>
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- Select 2 Plugin -->
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	<!-- Plugin Initialization -->
+	<script type="text/javascript" src="js/Plugin init/select-2-init.js"></script>	
+	<!-- My Script -->
+	<script type="text/javascript" src="js/myscript.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.cstm-tooltip-text').hide();
+			$('.unique-website-switch-container').hover(function(){	
+				$('.cstm-tooltip-text').fadeToggle(1000);				
+			});
+		});
+	</script>
+</body>
+</html>

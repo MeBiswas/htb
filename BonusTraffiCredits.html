@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTB</title>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Fav Icon -->
+	<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Font Awesome Icons Link -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- My Style -->
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive-style.css">
+</head>
+<body>
+	<header class="dashboard-header-wrapper">
+		<nav class="navbar navbar-expand-lg fixed-top sticky background-color-black navbar-custom">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo-black-bg.png" class="img-responsive index-page-navbar-logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dashboardNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="dashboardNavbar" class="collapse navbar-collapse justify-content-end">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="aboutUs.html">About Us</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="Blog.html">Blog</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="News.html">News</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="howToEarn.html">How To Earn</a>
+				    </li>
+					<!-- Dropdown -->
+					<li class="nav-item dropdown">
+						<button class="btn nav-link dropdown-toggle dashboard-nav-usr-btn" href="#" id="navbardrop" data-toggle="dropdown">
+							<img src="images/userim.jpg" class="dashboard-nav-img">
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="dashboard.html">My Dashboard</a>
+							<a class="dropdown-item" href="myCredits.html">My Credits</a>
+							<a class="dropdown-item" href="myPayments.html">My Payments</a>
+							<a class="dropdown-item" href="index.html">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section class="dashboard-section-container">
+		<div class="dashboard-section">
+			<div class="dashboard-siderbar-wrapper">
+				<div class="dashboard-sidebar-img-container">
+					<img src="images/userim.jpg" class="img-responsive dashboard-sidebar-img" />
+					<h5 class="dashboard-sidebar-user-name">John Doe</h5>
+				</div>	
+				<div class="dropdown dropright dashboard-sidebar-link-wrapper">
+					<div id="accordion">
+						<div class="card dashboard-sidebar-card">
+							<div class="card-header dashboard-sidebar-card-header">
+								<a class="card-link dashboard-sidebar-card-link sidebar-link-active" data-toggle="collapse" href="#dashSideAcc">
+									<i class="fas fa-user-alt"></i> Account
+								</a>
+							</div>
+							<div id="dashSideAcc" class="collapse show" data-parent="#accordion">
+								<div class="card-body dashboard-sidebar-card-body">
+									<a href="TraffiCredits.html" class="dropdown-item dashboard-sidebar-link-dropdown-item">TraffiCredits</a>
+									<a href="BonusTraffiCredits.html" class="dropdown-item dashboard-sidebar-link-dropdown-item sidebar-link-active">Bonuses</a>
+									<a href="Earnings.html" class="dropdown-item dashboard-sidebar-link-dropdown-item">Earnings</a>
+									<a href="RewardProgram.html" class="dropdown-item dashboard-sidebar-link-dropdown-item">Reward Program</a>
+									<a href="myPlan.html" class="dropdown-item dashboard-sidebar-link-dropdown-item">My Plan</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="dashboard-sidebar-link-wrapper">
+					<a href="myConnections.html" class="dashboard-sidebar-link">
+						<i class="fas fa-link"></i> My Connections
+					</a>
+				</div>
+				<div class="dashboard-sidebar-link-wrapper">
+					<a href="Inbox.html" class="dashboard-sidebar-link">
+						<i class="fas fa-inbox"></i> Inbox
+					</a>
+				</div>
+				<div class="dashboard-sidebar-link-wrapper">
+					<a href="Surfing.html" class="dashboard-sidebar-link">
+						<i class="fas fa-laptop"></i> Surfing
+					</a>
+				</div>
+				<div class="dashboard-sidebar-link-wrapper">
+					<a href="Profile.html" class="dashboard-sidebar-link">
+						<i class="fas fa-users"></i> My Profile
+					</a>
+				</div>
+				<div class="dashboard-sidebar-link-wrapper">
+					<a href="myWebsite.html" class="dashboard-sidebar-link">
+						<i class="fas fa-paper-plane"></i> My Website
+					</a>
+				</div>
+				<div class="dashboard-sidebar-link-wrapper">
+					<a href="Settings.html" class="dashboard-sidebar-link">
+						<i class="fas fa-cogs"></i> My Settings
+					</a>
+				</div>
+			</div>
+			<div class="dashboard-top-bar-ad-wrapper">
+				<a href="advertisement.html" class="dashboard-top-bar-ad-link">
+					<img src="images/new-banner.png" class="dashboard-new-banner-img">
+				</a>
+			</div>
+			<div class="dashboard-content-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h2 class="dashboard-content-header text-center">Bonus TraffiCredit</h2>
+							<div class="trafCdt-page-data-container">
+								<div class="table-responsive-md">
+									<table class="table table-striped table-hover">
+										<thead class="thead-dark">
+											<tr>
+												<th>Date</th>
+												<th>Type of Bonus</th>
+												<th>User's Name (Referral)</th>
+												<th>TraffiCredits Earned</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>01-01-2019</td>
+												<td>referral</td>
+												<td>John</td>
+												<td>35</td>
+											</tr>
+											<tr>
+												<td>02-01-2019</td>
+												<td>referral</td>
+												<td>John</td>
+												<td>45</td>
+											</tr>
+											<tr>
+												<td>03-01-2019</td>
+												<td>referral</td>
+												<td>John</td>
+												<td>55</td>
+											</tr>
+											<tr>
+												<td>04-01-2019</td>
+												<td>referral</td>
+												<td>John</td>
+												<td>65</td>
+											</tr>
+										</tbody>
+									</table>							
+								</div>							
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+									<div class="trafCdt-page-data-container">
+										<div class="table-responsive-md">
+											<table class="table table-borderless">
+												<tbody>
+													<tr>
+														<td class="trafCdt-page-td">Total Bonus Earned</td>
+														<td class="trafCdt-page-td">160</td>
+													</tr>
+													<tr>
+														<td class="trafCdt-page-td">Total TraffiCredits</td>
+														<td class="trafCdt-page-td">55</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>								
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="dashboard-advt-wrapper">
+										<img src="images/banner-1.png" class="dashboard-advt-img">
+										<img src="images/banner-2.png" class="dashboard-advt-img">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</section>	
+	<footer class="index-page-footer-wrapper">
+		<ul class="breadcrumb index-page-upper-footer-list">
+			<li class="breadcrumb-item"><a href="contactUs.html">Contact Us</a></li>
+		    <li class="breadcrumb-item"><a href="faq.html">FAQ</a></li>
+		    <li class="breadcrumb-item"><a href="privacyPolicy.html">Privacy Policy</a></li>
+		    <li class="breadcrumb-item"><a href="termsAndConditions.html">Terms & Conditions</a></li>
+		</ul>
+	</footer>	
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- My Script -->
+	<script type="text/javascript" src="js/myscript.js"></script>
+</body>
+</html>

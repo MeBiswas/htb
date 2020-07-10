@@ -1,0 +1,230 @@
+@media only screen and (max-width: 1824px) {
+	/*Index Page Navbar Style*/
+	.background-color-black .index-page-navbar-sign-in-btn-container {
+		padding: 0px 0;
+	}
+	/*end*/
+}
+
+@media only screen and (max-width: 1440px) {
+	/*Index Page Style*/
+	.index-page-banner-title h1 {
+		font-size: 48px;
+	}
+	.index-page-banner-more-btn-container {
+		width: 20%;
+	}
+	/*end*/
+}
+
+@media only screen and (max-width: 1224px) {
+}
+
+@media only screen and (max-width: 1200px) {
+	/*Index Page Style*/
+	.index-page-banner-title h1 {
+		font-size: 47px;
+	}
+	/*Dashboard Page Style*/
+	.dashboard-sidebar-link-wrapper {
+		padding: 5% 11%;
+	}
+}
+
+@media only screen and (max-width: 1080px) {
+	/*Index Page Navbar Style*/
+	.index-page-navbar-link {
+		padding: 28px 14px !important;
+	}
+	.navbar-nav {
+		width: 100%;
+		justify-content: end;
+	}
+	/*Index Page Style*/
+	.index-page-banner-title h1 {
+		font-size: 41px;
+	}
+	.type-text.teletype {
+		font-size: 23px;
+	}
+	.index-page-banner-more-btn-container a {
+		font-size: 25px;
+	}
+	/*Dashboard Page Style*/
+	.dashboard-sidebar-link-wrapper {
+		padding: 5% 7%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	/*Index Page Style*/
+	.index-page-banner-title h1 {
+		font-size: 38px;
+	}
+	.type-text.teletype {
+		font-size: 21px;
+	}
+	.index-page-banner-more-btn-container a {
+		font-size: 24px;
+	}
+	/*Dashboard Page Style*/
+	.dashboard-sidebar-link-wrapper {
+		padding: 5% 7%;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	/*Index Page Style*/
+	.index-page-banner-title h1 {
+		font-size: 37px;
+	}
+	.type-text.teletype {
+		font-size: 20px;
+	}
+	.index-page-banner-more-btn-container a {
+		font-size: 23px;
+	}
+	/*Dashboard Page Style*/
+	.dashboard-sidebar-link-wrapper {
+		padding: 5% 3%;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	/*Index Page Style*/
+	.index-page-banner-title {
+		width: 60%;
+	}
+	/*end*/
+}
+
+@media only screen and (max-width: 800px) {
+	/*Index Page Navbar Style*/
+	.navbar-collapse.justify-content-end.collapse.show .index-page-navbar-sign-in-btn-container {
+		width: 23%;
+	}
+	/*Index Page Style*/
+	.index-page-banner-title {
+		width: 72%;
+	}
+	.index-page-banner-title h1 {
+		font-size: 35px;
+	}
+	.index-page-banner-more-btn-container {
+		left: 0; 
+	}
+	.index-page-banner-more-btn-container {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	/*Index Page Navbar Style*/
+	.navbar-collapse.justify-content-end.collapse.show .index-page-navbar-sign-in-btn-container {
+		width: 24%;
+	}
+	/*Index Page Style*/
+	.index-page-banner-title {
+		width: 76%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 667px) {
+	/*Index Page Navbar Style*/
+	.navbar-collapse.justify-content-end.collapse.show .nav-item {
+		width: 20%;
+	}
+	.navbar-collapse.justify-content-end.collapse.show .index-page-navbar-sign-in-btn-container {
+		width: 27%;
+	}
+	/*Index Page Style*/
+	.index-page-banner-title {
+		width: 88%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	/*Index Page Navbar Style*/
+	.navbar-collapse.justify-content-end.collapse.show .index-page-navbar-sign-in-btn-container {
+		width: 100%;
+	}
+	/*Index Page Style*/
+	.index-page-banner-title {
+		width: 93%;
+	}
+}
+
+@media only screen and (max-width: 568px) {
+	/*Index Page Style*/
+	.index-page-banner-title {
+		width: 100%;
+	}
+	.index-page-banner-title h1 {
+		font-size: 32px;
+	}
+	.type-text.teletype {
+		font-size: 20px;
+	}
+	.index-page-banner-more-btn-container a {
+		font-size: 21px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	/*Index Page Navbar Style*/
+	.navbar-collapse.justify-content-end.collapse.show .nav-item {
+		width: 25%;
+	}
+	/*Index Page Style*/
+	.index-page-banner-title h1 {
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	/*Index Page Navbar Style*/
+	.navbar-collapse.justify-content-end.collapse.show .nav-item {
+		width: 26%;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	/*Index Page Navbar Style*/
+	.navbar-brand {
+		width: 245px;
+	}
+	.navbar-collapse.justify-content-end.collapse.show .nav-item {
+		width: 28%;
+	}
+	/*Index Page Style*/
+	.index-page-banner-title-wrapper {
+		top: 20%;
+	}
+	.index-page-partner-website-section-title {
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	/*Index Page Navbar Style*/
+	.navbar-collapse.justify-content-end.collapse.show .nav-item {
+		width: 30%;
+	}	
+}
+
+@media only screen and (max-width: 320px) {
+	/*Index Page Navbar Style*/
+	.navbar-brand {
+		width: 228px;
+	}
+	.navbar-collapse.justify-content-end.collapse.show .nav-item {
+		width: 34%;
+	}
+	/*Index Page Style*/
+	.index-page-banner-title h1 {
+		font-size: 32px;
+	}
+}

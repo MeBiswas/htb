@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTB</title>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Fav Icon -->
+	<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Font Awesome Icons Link -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- Datepicker Style -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+	<!-- Select 2 Plugin -->
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+	<!-- My Style -->
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+<body>
+	<header class="dashboard-header-wrapper">
+		<nav class="navbar navbar-expand-lg fixed-top sticky background-color-black navbar-custom">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo-black-bg.png" class="img-responsive index-page-navbar-logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dashboardNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="dashboardNavbar" class="collapse navbar-collapse justify-content-end">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="aboutUs.html">About Us</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="Blog.html">Blog</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="News.html">News</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link index-page-navbar-link" href="howToEarn.html">How To Earn</a>
+				    </li>
+					<!-- Dropdown -->
+					<li class="nav-item dropdown">
+						<button class="btn nav-link dropdown-toggle dashboard-nav-usr-btn" href="#" id="navbardrop" data-toggle="dropdown">
+							<img src="images/userim.jpg" class="dashboard-nav-img">
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="dashboard.html">My Dashboard</a>
+							<a class="dropdown-item" href="myCredits.html">My Credits</a>
+							<a class="dropdown-item" href="myPayments.html">My Payments</a>
+							<a class="dropdown-item" href="index.html">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section class="complete-profile-page-section-wrapper">
+	    <div class="complete-profile-page-section-header">
+	        <h2 class="complete-profile-page-section-header-title">Complete Your Profile</h2>
+	    </div>
+        <div class="container">
+		    <div class="complete-profile-page-section-data-container">
+	            <div class="complete-profile-page-section-content">
+	                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                    <div class="complete-your-profile-field">
+	                        <form id="complete-your profile-form" novalidate="novalidate" action="#">
+	                            <div class="row">
+	                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0 form-group">
+	                                    <div class="col-md-12 col-sm-12 col-xs-12">
+	                                        <div class="form-group">
+												<select class="custom-select" id="gender" name="gender">
+													<option>Select Your Gender</option>
+													<option>Male</option>
+													<option>Female</option>
+												</select>
+											</div>
+	                                    </div>
+	                                </div>
+	                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0 pd-bt-15 form-group">
+	                                    <div class="col-md-12 col-sm-12 col-xs-12 input-group" id="datetimepicker1">
+	                                        <input type="text" id="datepicker" class="form-control formTxtField" placeholder="Date Of Birth" name="dob">
+	                                        <div class="input-group-append">
+										    	<span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+										  	</div>
+	                                    </div>
+	                                </div>	                               
+	                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0 form-group">
+	                                	<div class="col-md-12 col-sm-12 col-xs-12">
+		                                	<div class="form-group">
+												<select class="custom-select select-test" id="interest" name="interest" multiple="multiple">
+													<optgroup label="Group 1" >
+													<option>Increase Traffic</option>
+													<option>Business Engagement</option>
+													<option>Brand Awareness</option>
+													<option>Lead Generation</option>
+													<optgroup label="Group 2">
+													<option>Increase Traffic</option>
+													<option>Business Engagement</option>
+													<option>Brand Awareness</option>
+													<option>Lead Generation</option>
+													<option>Other</option>
+												</select>
+											</div>
+	                                	</div>
+	                                </div>
+	                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0 form-group">
+	                                	<div class="col-md-12 col-sm-12 col-xs-12">
+		                                	<div class="form-group">
+												<select class="custom-select select-test selectpicker" data-dropup-auto="false" id="hobby" name="hobby" multiple="multiple">
+													<optgroup label="Group 1">
+													<option>Online Gaming</option>
+													<option>Indoor Games</option>
+													<option>Outdoor Games</option>
+													<option>Reading Books/Articles</option>
+													<optgroup label="Group 2">
+													<option>Online Gaming</option>
+													<option>Indoor Games</option>
+													<option>Outdoor Games</option>
+													<option>Reading Books/Articles</option>
+													<option>Other</option>
+												</select>
+											</div>
+	                                	</div>
+	                                </div>
+	                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0 form-group">
+	                                	<div class="col-md-12 col-sm-12 col-xs-12">
+		                                	<div class="form-group">
+												<select class="custom-select" id="education" name="edication">
+													<option>Select Education</option>
+													<option>B.Tech</option>
+													<option>M.Tech</option>
+													<option>B.C.A.</option>
+													<option>M.C.A.</option>
+													<option>Others</option>
+												</select>
+											</div>
+	                                	</div>
+	                                </div>
+	                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0 form-group">
+	                                	<div class="col-md-12 col-sm-12 col-xs-12">
+		                                	<div class="form-group">
+												<select class="custom-select" id="sec-Edu" name="secEdu">
+													<option>Select Secondary Level Education</option>
+													<option>Science</option>
+													<option>Commerce</option>
+													<option>Arts</option>
+													<option>Vocational</option>
+													<option>Others</option>
+												</select>
+											</div>
+	                                	</div>
+	                                </div>
+	                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0 form-group">
+	                                	<div class="col-md-12 col-sm-12 col-xs-12">
+		                                	<div class="form-group">
+												<select class="custom-select" id="country" name="country">
+													<option>Choose Country</option>
+													<option>India</option>
+													<option>China</option>
+													<option>Pakistan</option>
+													<option>Bangladesh</option>
+													<option>Others</option>
+												</select>
+											</div>
+	                                	</div>
+	                                </div>
+	                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0 form-group">
+	                                	<div class="col-md-12 col-sm-12 col-xs-12">
+		                                	<div class="form-group">
+												<select class="custom-select" id="city" name="city">
+													<option>Choose City</option>
+													<option>Amritsar</option>
+													<option>Bangalore</option>
+													<option>Chennai</option>
+													<option>Delhi</option>
+													<option>Others</option>
+												</select>
+											</div>
+	                                	</div>
+	                                </div>
+	                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0 form-group">
+	                                	<div class="col-md-12 col-sm-12 col-xs-12">
+	                                		<a href="javascript:void(0)" class="btn next-btn" data-toggle="modal" data-target="#completeProfileModal">Next</a>
+	                                	</div>
+	                                </div>
+	                            </div>
+	                        </form>
+	                    </div>
+	                    <div class="complete-profile-page-register-container">
+	                        <p><strong>Note :</strong> This information is optional and, if provided, will possibly result in better earnings.<a href="dashboard.html"> Skip</a></p>
+	                    </div>
+	                </div>
+	            </div>          
+		    </div>        	
+        </div>
+	</section>
+	<footer class="index-page-footer-wrapper">
+		<ul class="breadcrumb index-page-upper-footer-list">
+			<li class="breadcrumb-item"><a href="contactUs.html">Contact Us</a></li>
+		    <li class="breadcrumb-item"><a href="faq.html">FAQ</a></li>
+		    <li class="breadcrumb-item"><a href="privacyPolicy.html">Privacy Policy</a></li>
+		    <li class="breadcrumb-item"><a href="termsAndConditions.html">Terms & Conditions</a></li>
+		</ul>
+	</footer>
+	<!-- Complete Profile Modal -->
+	<div class="modal fade" id="completeProfileModal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header compProfMdl-head">
+					<h4 class="modal-title">Complete Your Profile</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body compProfMdl-body">
+					<form action="#" novalidate="novalidate">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
+                                	<div class="col-md-12 col-sm-12 col-xs-12">
+										<select class="custom-select" id="surfCampaign" name="surfCampaign">
+											<option>Choose any Combination of Campaign to Surf</option>
+											<option>Short(20 + Seconds)</option>
+											<option>Medium(40 + Seconds)</option>
+											<option>Long(60 + Seconds)</option>
+										</select>
+                                	</div>
+                                </div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- Modal Footer -->
+				<div class="modal-footer compProfMdl-foot">
+					<button type="button" class="btn complete-profile-mdl-btn" data-dismiss="modal">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- Datepicker Plugin -->
+	<!-- <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script> -->
+	<script type="text/javascript" src="js/moment.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+	<!-- Select 2 Plugin -->
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	<!-- Plugin Initialization -->
+	<script type="text/javascript" src="js/Plugin init/select-2-init.js"></script>
+	<!-- <script type="text/javascript" src="js/Plugin init/bootstrap-datepicker-init.js"></script> -->
+	<!-- My Script -->
+	<script type="text/javascript" src="js/myscript.js"></script>
+	<script type="text/javascript">
+        $(function () {
+            $('#datepicker').datetimepicker();
+        });
+    </script>
+</body>
+</html>
